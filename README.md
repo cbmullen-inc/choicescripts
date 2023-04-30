@@ -11,6 +11,8 @@ For creating and storing [choicescript games](https://www.choiceofgames.com/make
 - [spellchecker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 
-## Publisher
+## Website
 
-- [Netlify](https://app.netlify.com/sites/tiny-puffpuff-33f909/overview)
+Hosted by Netlify.
+
+<https://tiny-puffpuff-33f909.netlify.app>
