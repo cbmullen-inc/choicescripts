@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Choicescript game library</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      #header h1 {
+        margin: 0;
+      }
+      #main {
+        display: flex;
+      }
+      #sidebar {
+        background-color: #eee;
+        padding: 10px;
+        width: 200px;
+      }
+      #content {
+        flex: 1;
+        padding: 10px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Choicescript Game Library</h1>
+    </div>
+    <div id="main">
+      <div id="sidebar">
+        <h2>Games</h2>
+        <ul>
+          <li><a href="./games/game2/index.html">Game 2</a></li>
+          <li><a href="http://www.google.com">Google Game</a></li>
+          <li><a href="http://www.github.com">GitHub Game</a></li>
+          <li><a href="http://www.linkedin.com">LinkedIn Game</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <h2>Recent Games</h2>
+        <a href="./games/game2/index.html"><img src="https://via.placeholder.com/500x300" alt="Game 2"></a>
+        <a href="http://www.google.com"><img src="https://via.placeholder.com/500x300" alt="Google Game Image"></a>
+        <a href="http://www.github.com"><img src="https://via.placeholder.com/500x300" alt="GitHub Game Image"></a>
+        <a href="http://www.linkedin.com"><img src="https://via.placeholder.com/500x300" alt="LinkedIn Game Image"></a>
+      </div>
+    </div>
+  </body>
+</html>
