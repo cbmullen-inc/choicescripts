@@ -1,7 +1,10 @@
 {
     "version": "0.2",
     "ignorePaths": [
-        "*.html"
+        "choicescript_src",
+        "Makefile",
+        "*.html",
+        "*.sh"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
@@ -9,6 +12,7 @@
         "anotherscene",
         "choicescript",
         "Choicescripts",
+        "Chrisbot",
         "Fabulich",
         "gosub"
     ],
