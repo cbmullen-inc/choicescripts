@@ -3,7 +3,7 @@ on: # rebuild any PRs and main branch changes
   pull_request:
 
 jobs:
-  spellcheck: # run the action
+  quality-gates: # run the action
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
