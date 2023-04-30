@@ -14,3 +14,6 @@ jobs:
       
       - name: Run Spellcheck
         run: npm run spellcheck
+
+      - name: Run Quicktests
+        run: make test-all
