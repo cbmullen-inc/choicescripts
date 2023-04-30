@@ -1,0 +1,7 @@
+{
+    "*.txt" : [
+        "npm run spellcheck",
+        "make test-all"
+    ],
+    "*.md" : "npm run lint-markdown"
+}

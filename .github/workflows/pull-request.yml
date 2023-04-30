@@ -2,8 +2,12 @@ name: 'Check spelling'
 on: # rebuild any PRs and main branch changes
   pull_request:
 
+permissions:
+  id-token: write
+  contents: write
+
 jobs:
-  spellcheck: # run the action
+  quality-gates: # run the action
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,3 +18,9 @@ jobs:
       
       - name: Run Spellcheck
         run: npm run spellcheck
+
+      - name: Run Linting
+        run: npm run lint-markdown
+
+      - name: Run Tests
+        run: ./scripts/test_all.sh
