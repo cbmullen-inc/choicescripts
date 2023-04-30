@@ -1,4 +1,7 @@
 {
+    "cSpell.enableFiletypes": [
+        "choicescript"
+    ],
     "[choicescript]": {
         "editor.quickSuggestions": {
             "comments": false,

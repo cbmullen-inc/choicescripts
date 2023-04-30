@@ -1,0 +1,19 @@
+{
+    "version": "0.2",
+    "ignorePaths": [
+        "*.html"
+    ],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "anotherscene",
+        "choicescript",
+        "Fabulich",
+        "gosub"
+    ],
+    "ignoreWords": [],
+    "import": [],
+    "enableFiletypes": [
+        "choicescript"
+    ]
+}
