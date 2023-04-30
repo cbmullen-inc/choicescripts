@@ -6,5 +6,11 @@ jobs:
   spellcheck: # run the action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: streetsidesoftware/cspell-action@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Setup
+        run: make setup
+      
+      - name: Run Spellcheck
+        run: npm run spellcheck
