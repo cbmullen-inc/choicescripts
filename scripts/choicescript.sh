@@ -14,9 +14,9 @@ for var in "${env_vars[@]}"; do
 done
 
 # Check locations.
-SRC_LOCATION=".\\choicescript_src"
-TEMP_LOCATION="${SRC_LOCATION}\\web\\mygame\\scenes"
-GAME_LOCATION=".\\games\\${GAME_NAME}\\scenes"
+SRC_LOCATION="./choicescript_src"
+TEMP_LOCATION="${SRC_LOCATION}/web/mygame/scenes"
+GAME_LOCATION="./games/${GAME_NAME}/scenes"
 
 dirs=("${GAME_LOCATION}" "${SRC_LOCATION}" "${TEMP_LOCATION}")
 

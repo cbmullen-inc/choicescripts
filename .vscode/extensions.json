@@ -2,6 +2,8 @@
     "recommendations": [
         "StephenGranade.choicescript-vscode",
         "streetsidesoftware.code-spell-checker",
-        "oderwat.indent-rainbow"
+        "oderwat.indent-rainbow",
+        "ms-vscode.makefile-tools",
+        "eamodio.gitlens"
     ]
 }
