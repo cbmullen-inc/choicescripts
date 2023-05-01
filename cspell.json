@@ -4,7 +4,8 @@
         "choicescript_src",
         "Makefile",
         "*.html",
-        "*.sh"
+        "*.sh",
+        "*.json"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
