@@ -1,0 +1,6 @@
+*page_break Chapter 1
+[b]Chapter 1[/b]
+
+The story begins with the our Duncan choices…
+
+*goto_scene ending
