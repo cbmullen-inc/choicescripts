@@ -1,0 +1,10 @@
+kingdom_name: ${kingdom_name}
+
+
+Attributes:
+*stat_chart
+    text gold
+    text men
+    text lands
+    text public_opinion
+    text years_remaining

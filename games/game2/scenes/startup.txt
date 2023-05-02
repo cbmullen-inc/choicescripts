@@ -1,0 +1,18 @@
+*title Kingdom Manager
+*author Chris
+
+*scene_list
+    startup
+    prologue
+    starter
+    petitions
+
+*comment Create Ruler  Game Stats
+*create kingdom_name ""
+*create gold 3500
+*create men 700
+*create lands 5
+*create public_opinion "Caitiff"
+*create years_remaining 25
+
+*finish
