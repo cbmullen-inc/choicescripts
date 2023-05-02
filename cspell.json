@@ -2,10 +2,12 @@
     "version": "0.2",
     "ignorePaths": [
         "choicescript_src",
+        "games/game1",
         "Makefile",
         "*.html",
         "*.sh",
-        "*.json"
+        "*.json",
+        "*.mp3"
     ],
     "dictionaryDefinitions": [],
     "dictionaries": [],
