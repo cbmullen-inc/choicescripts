@@ -1,0 +1,68 @@
+*temp num 5
+
+*label petitionerEnters
+*temp petitioner
+*rand petitioner 0 2
+
+*set num - 1
+There are ${num} people left to see you today.
+
+*if petitioner = 0
+  *goto petitioner0
+
+*if petitioner = 1
+  *goto petitioner1
+
+  *if petitioner = 2
+    *goto petitioner2
+
+*label petitioner0
+0. My neighbor has been sleeping with my wife against the law!
+*choice
+  #Have the neighbor arrested.
+    The neighbor is sentenced to prison. Send the peasant away.
+    *goto petitionerEnters
+  #Have the wife arrested.
+    The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *goto petitionerEnters
+  #Have the peasant arrested.
+    You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
+    *goto petitionerEnters
+  #Have the peasant killed.
+    You come to me with this trifle of an issue? You wasted valuable time. That's treason.
+    Your guards kill the man, and remove his body from the court.
+    *goto petitionerEnters
+
+*label petitioner1
+1. My neighbor has been sleeping with my wife against the law!
+*choice
+  #Have the neighbor arrested.
+    The neighbor is sentenced to prison. Send the peasant away.
+    *goto petitionerEnters
+  #Have the wife arrested.
+    The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *goto petitionerEnters
+  #Have the peasant arrested.
+    You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
+    *goto petitionerEnters
+  #Have the peasant killed.
+    You come to me with this trifle of an issue? You wasted valuable time. That's treason.
+    Your guards kill the man, and remove his body from the court.
+    *goto petitionerEnters
+
+*label petitioner2
+2. My neighbor has been sleeping with my wife against the law!
+*choice
+  #Have the neighbor arrested.
+    The neighbor is sentenced to prison. Send the peasant away.
+    *goto petitionerEnters
+  #Have the wife arrested.
+    The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *goto petitionerEnters
+  #Have the peasant arrested.
+    You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
+    *goto petitionerEnters
+  #Have the peasant killed.
+    You come to me with this trifle of an issue? You wasted valuable time. That's treason.
+    Your guards kill the man, and remove his body from the court.
+    *goto petitionerEnters

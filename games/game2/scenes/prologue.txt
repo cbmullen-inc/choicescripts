@@ -1,0 +1,6 @@
+You have finally been able to declare your independence from the local warlords and created your own kingdom.
+It's small for now, but it will grow.
+
+You get to name your kingdom, but what will it be?
+
+*input_text kingdom_name
