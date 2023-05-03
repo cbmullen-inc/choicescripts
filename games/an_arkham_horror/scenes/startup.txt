@@ -6,7 +6,6 @@
     choose_investigator
     location_sitting_room
     encounter
-    skill_test
     end_game
 
     location_attic
