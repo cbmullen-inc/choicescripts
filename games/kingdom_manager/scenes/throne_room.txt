@@ -30,6 +30,8 @@ My neighbour has been sleeping with my wife against the law!
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -37,6 +39,8 @@ My neighbour has been sleeping with my wife against the law!
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
 
 
@@ -50,6 +54,8 @@ Next thing
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -57,6 +63,8 @@ Next thing
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
 
 *label 2
@@ -69,6 +77,8 @@ Another thing
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -76,4 +86,6 @@ Another thing
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
