@@ -1,3 +1,5 @@
+GAME_NAME ?= kingdom_manager
+
 ###
 ##@ Setup
 ###
