@@ -1,0 +1,24 @@
+*page_break Back to other duties
+
+*label kingdom_menu
+[b]${kingdom_name} - Duties[/b]
+*line_break
+-------------------
+*line_break
+Gold: ${gold} - Men: ${men} - Lands: ${lands} - Public Opinion: ${public_opinion} - Years Remaining: ${years_remaining}
+*line_break
+------------------
+*line_break
+*choice
+  #Recruit, sell and disband troops
+    *goto_scene troops
+  #Manage staff
+    *goto_scene staff
+  #Kingdom upgrades
+    *goto_scene kingdom_upgrades
+  #Visit the throne room - You have ${visitors} visitors waiting
+    *goto_scene throne_room
+  #Send out scouts to explore and report
+    *goto_scene scout_report
+  #End the current year
+    *goto_scene year_end

@@ -4,15 +4,30 @@
 *scene_list
     startup
     prologue
-    starter
-    petitions
+    menu
+
+    kingdom_upgrades
+    scout_report
+    staff
+    throne_room
+    troops
+    visitor_next
+    visitor_noble
+    visitor_pleb_d4
+    visitor_pleb_d5
+    visitor_research
+    year_end
+
+    end_game
 
 *comment Create Ruler  Game Stats
 *create kingdom_name ""
 *create gold 3500
 *create men 700
 *create lands 5
-*create public_opinion "Caitiff"
+*create public_opinion 50
 *create years_remaining 25
+*create visitors 0
+
 
 *finish

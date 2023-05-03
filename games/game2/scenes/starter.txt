@@ -1,8 +1,0 @@
-
-
-You sit on the throne for the first time, surrounded by your advisors. 
-There's no time for comfort though as the needs of [b]${kingdom_name}[/b] must be seen to.
-
-There is a line of peasants outside the door with requests and demands.
-
-*finish OK open the doors, let them in.

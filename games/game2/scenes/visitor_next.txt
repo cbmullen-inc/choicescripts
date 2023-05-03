@@ -1,0 +1,22 @@
+*comment Allow user to break out here 
+
+*set visitors - 1
+*if visitors = 0
+    You put your feet up and enjoy the quiet. You know it won't last…
+    *goto_scene menu
+
+There are ${visitors} visitors still waiting for an audience.
+*line_break
+You can ask your advisor to send in the next visitor. You can leave them waiting while you tend to other matters. Or you can get your adviser to take care of the rest.
+
+*choice
+    #Send in the next visitor
+      *goto visitor_logic
+    #Go about other duties.
+      *goto_scene menu
+    #Have your advisor deal with this (TODO)
+      *goto_scene menu
+
+*comment Goto scenes and labels based on stuff.
+*label visitor_logic
+*goto_scene throne_room

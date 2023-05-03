@@ -17,7 +17,8 @@
         "Choicescripts",
         "Chrisbot",
         "Fabulich",
-        "gosub"
+        "gosub",
+        "neighbour"
     ],
     "ignoreWords": [],
     "import": [],
