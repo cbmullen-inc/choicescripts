@@ -25,6 +25,8 @@ My neighbour has been sleeping with my wife against the law!
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
@@ -39,10 +41,12 @@ My neighbour has been sleeping with my wife against the law!
 
 
 *label 1
-My neighbour has been sleeping with my wife against the law!
+Next thing
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
@@ -56,10 +60,12 @@ My neighbour has been sleeping with my wife against the law!
     *goto_scene visitor_next
 
 *label 2
-My neighbour has been sleeping with my wife against the law!
+Another thing
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
