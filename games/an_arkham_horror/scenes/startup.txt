@@ -1,0 +1,29 @@
+*title An Arkham Horror
+*author Chris
+
+*scene_list
+    startup
+    choose_investigator
+    location_sitting_room
+    encounter
+    skill_test
+    end_game
+
+    location_attic
+    location_library
+
+*comment Create investigator stats
+*create i_name ""
+*create i_willpower 0
+*create i_intellect 0
+*create i_combat 0
+*create i_agility 0
+*create i_health 0
+*create i_sanity 0
+*create i_experience 0
+
+*comment Skill test stats
+*create test_difficulty 0
+*create test_modified_value 0
+
+*finish

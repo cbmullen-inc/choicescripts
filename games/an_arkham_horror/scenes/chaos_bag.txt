@@ -1,0 +1,75 @@
+*temp draw
+*rand draw 1 16
+
+*temp token_value 0
+
+*if draw = 1 
+    *set token_value + 1
+
+*if draw = 2 
+    *set token_value + 0
+
+*if draw = 3 
+    *set token_value + 0
+
+*if draw = 4 
+    *set token_value - 1
+
+*if draw = 5 
+    *set token_value - 1
+
+*if draw = 6 
+    *set token_value - 1
+
+*if draw = 7 
+    *set token_value - 2
+
+*if draw = 8 
+    *set token_value - 2
+
+*if draw = 9 
+    *set token_value - 3
+    
+*if draw = 10 
+    *set token_value - 4
+
+*if draw = 11 
+    *set token_value + 0
+
+*if draw = 12 
+    *set token_value + 0
+
+*if draw = 13 
+    *set token_value + 0
+
+*if draw = 14 
+    *set token_value + 0
+
+*if draw = 15 
+    *set token_value + 1000
+    You feel as though fate has finally intervened on your behalf, if only for a brief respite against the chaos. 
+
+*if draw = 16 
+    *set token_value - 1000
+    There was no chance you could succeed this challenge. The forces arrayed against you were too strong.
+
+difficulty was ${test_difficulty}
+*line_break
+skill value was ${test_modified_value}.
+*line_break
+token was ${token_value}
+*line_break
+*set test_modified_value + {token_value}
+modified_value was ${test_modified_value}.
+*line_break
+
+*if test_modified_value >= test_difficulty
+    Luck was on your side this day: (token: ${token_value} modified value: ${test_modified_value})
+
+*if test_modified_value < test_difficulty
+    Chaos prevailed this day: (modifier: ${token_value} modified value: ${test_modified_value})
+
+*set test_difficulty 0
+*set test_modified_value 0
+
+*finish

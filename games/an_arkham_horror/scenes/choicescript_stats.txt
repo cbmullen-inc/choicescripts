@@ -1,0 +1,10 @@
+Attributes:
+*stat_chart
+    text i_name Name
+    percent i_willpower willpower
+    percent i_intellect intellect
+    percent i_combat combat
+    percent i_agility agility
+    percent i_health health
+    percent i_sanity sanity
+    percent i_experience experience
