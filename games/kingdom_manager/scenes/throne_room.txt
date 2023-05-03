@@ -25,9 +25,13 @@ My neighbour has been sleeping with my wife against the law!
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -35,17 +39,23 @@ My neighbour has been sleeping with my wife against the law!
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
 
 
 *label 1
-My neighbour has been sleeping with my wife against the law!
+Next thing
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -53,16 +63,22 @@ My neighbour has been sleeping with my wife against the law!
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
 
 *label 2
-My neighbour has been sleeping with my wife against the law!
+Another thing
 *choice
   #Have the neighbour arrested.
     The neighbour is sentenced to prison. Send the peasant away.
+    *set public_opinion + 1
+    [b]public opinion +1 [/b]
     *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
+    *set public_opinion -1
+    [b]public opinion -1 [/b]
     *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
@@ -70,4 +86,6 @@ My neighbour has been sleeping with my wife against the law!
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
+    *set men -1
+    [b]men -1 [/b]
     *goto_scene visitor_next
