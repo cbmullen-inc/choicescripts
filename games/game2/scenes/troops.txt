@@ -1,0 +1,2 @@
+Troop management here (TODO)
+*goto_scene menu

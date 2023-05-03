@@ -3,4 +3,7 @@ It's small for now, but it will grow.
 
 You get to name your kingdom, but what will it be?
 
-*input_text kingdom_name
+*rand visitors 0 5
+*set kingdom_name "Avalon"
+
+*comment *input_text kingdom_name

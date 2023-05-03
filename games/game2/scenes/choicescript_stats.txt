@@ -6,5 +6,7 @@ Attributes:
     text gold
     text men
     text lands
-    text public_opinion
+    opposed_pair public_opinion
+        loved
+        hated
     text years_remaining

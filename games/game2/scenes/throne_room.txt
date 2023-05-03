@@ -1,68 +1,73 @@
-*temp num 5
+*comment This will be replaced with a conditional that randomly selects a label from other visitor files.
+*comment Selection will be based on kingdom state etc
 
-*label petitionerEnters
-*temp petitioner
-*rand petitioner 0 2
+*if visitors = 0
+  You sit in your throne. It's very comfy. You look around a bit. You get up and go back to work.
+  *comment Empty throne room image
+  *goto_scene menu
 
-*set num - 1
-There are ${num} people left to see you today.
+*comment Logic in another file?
+*label visitorEnters
+*temp visitor
+*rand visitor 0 2
 
-*if petitioner = 0
-  *goto petitioner0
+*if visitor = 0 
+  *goto 0
 
-*if petitioner = 1
-  *goto petitioner1
+*if visitor = 1
+  *goto 1
 
-  *if petitioner = 2
-    *goto petitioner2
+*if visitor = 2
+  *goto 2
 
-*label petitioner0
-0. My neighbor has been sleeping with my wife against the law!
+*label 0
+My neighbour has been sleeping with my wife against the law!
 *choice
-  #Have the neighbor arrested.
-    The neighbor is sentenced to prison. Send the peasant away.
-    *goto petitionerEnters
+  #Have the neighbour arrested.
+    The neighbour is sentenced to prison. Send the peasant away.
+    *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
-    *goto petitionerEnters
+    *goto_scene visitor_next
 
-*label petitioner1
-1. My neighbor has been sleeping with my wife against the law!
+
+*label 1
+My neighbour has been sleeping with my wife against the law!
 *choice
-  #Have the neighbor arrested.
-    The neighbor is sentenced to prison. Send the peasant away.
-    *goto petitionerEnters
+  #Have the neighbour arrested.
+    The neighbour is sentenced to prison. Send the peasant away.
+    *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
-    *goto petitionerEnters
+    *goto_scene visitor_next
 
-*label petitioner2
-2. My neighbor has been sleeping with my wife against the law!
+*label 2
+My neighbour has been sleeping with my wife against the law!
 *choice
-  #Have the neighbor arrested.
-    The neighbor is sentenced to prison. Send the peasant away.
-    *goto petitionerEnters
+  #Have the neighbour arrested.
+    The neighbour is sentenced to prison. Send the peasant away.
+    *goto_scene visitor_next
   #Have the wife arrested.
     The wife is just as culpable if not more, in this society. She is sentenced for prison
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant arrested.
     You come to me with this trifle of an issue? You wasted valuable time. You'll learn your lesson in prison.
-    *goto petitionerEnters
+    *goto_scene visitor_next
   #Have the peasant killed.
     You come to me with this trifle of an issue? You wasted valuable time. That's treason.
     Your guards kill the man, and remove his body from the court.
-    *goto petitionerEnters
+    *goto_scene visitor_next

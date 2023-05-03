@@ -1,0 +1,18 @@
+*comment Set max visitors for the year based on Lands / Men
+(TODO)
+*rand visitors 0 100
+*set years_remaining - 1
+
+*if years_remaining = 0
+    *goto_scene end_game
+    *comment Empty throne room image
+
+This processes the year end. 
+1. Tax the populace.
+2. Pay the army
+3. Pay the staff.
+4. Process diplomacy
+5. Process conflict.
+6. Reduces years remaining
+7. Set the number of visitors for next year
+*goto_scene menu
