@@ -31,6 +31,9 @@ done
 cp -r "${GAME_LOCATION}"/scenes "${TEMP_LOCATION}"
 cp -r "${GAME_LOCATION}"/images "${TEMP_LOCATION}"
 cp -r "${GAME_LOCATION}"/sounds "${TEMP_LOCATION}"
+# Copy any changes to gameprop files. index. and credits etc style.css will go here too.
+echo cp "${GAME_LOCATION}"/gameprops/index.html "${TEMP_LOCATION}"/index.html
+cp "${GAME_LOCATION}"/gameprops/index.html "${TEMP_LOCATION}"/index.html
 
 # Are we compiling?
 if [ "${ACTION}" == "compile" ]; then
@@ -53,3 +56,4 @@ fi
 rm -r "${TEMP_LOCATION}/scenes/"
 rm -r "${TEMP_LOCATION}/images/"
 rm -r "${TEMP_LOCATION}/sounds/"
+rm "${TEMP_LOCATION}"/index.html
