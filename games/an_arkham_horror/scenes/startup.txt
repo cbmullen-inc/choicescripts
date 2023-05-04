@@ -8,6 +8,7 @@
     encounter
     end_game
 
+    choas_bag
     location_attic
     location_library
 
