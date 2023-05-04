@@ -2,3 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx lint-staged
+echo --------------
+echo "Did you remember to compile it this time?"
+echo --------------
