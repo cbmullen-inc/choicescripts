@@ -29,6 +29,14 @@ compile: ## Compiles the latest version of your game
 	ACTION=compile \
 	./scripts/choicescript.sh
 
+.PHONY: compile-all
+compile-all: ## Compiles all your games into index.html - useful for when you forget to do it locally
+	./scripts/compile_all.sh
+
+###
+##@ Testing
+###
+
 .PHONY: randomtest
 randomtest: ## Runs a randomtest over your scripts
 	@echo "-Randomly testing Game..."
@@ -42,10 +50,6 @@ quicktest: ## Runs a randomtest over your scripts
 	GAME_NAME=${GAME_NAME} \
 	ACTION=quicktest \
 	./scripts/choicescript.sh
-
-###
-##@ Testing
-###
 
 .PHONY: test-all
 test-all: ## Runs a quicktest over all the games

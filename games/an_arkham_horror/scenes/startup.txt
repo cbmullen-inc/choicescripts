@@ -8,7 +8,7 @@
     encounter
     end_game
 
-    choas_bag
+    chaos_bag
     location_attic
     location_library
 
