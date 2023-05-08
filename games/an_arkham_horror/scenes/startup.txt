@@ -25,9 +25,6 @@
 *create dice_roll 0
 
 *comment player state
-*create current_location "nowhere"
-*create current_room_clues 0
-*create available_clues 0
 *create clues_found 0
 
 *comment Skill test stats

@@ -56,6 +56,9 @@ It has ${room_clues[room_idx]} clues.
 *temp shroud room_shroud[room_idx]
 *set test_modified_value {i_intellect}
 
+*comment This should amend the test value
+*gosub_scene chaos_bag draw_token
+
 *if test_modified_value >= shroud
     ${test_modified_value} beats a shroud of ${shroud}. You found a clue!
     *comment Set pointer to variable
