@@ -4,13 +4,11 @@
 *scene_list
     startup
     choose_investigator
-    location_sitting_room
-    encounter
+    locations
+    encounter_action
     end_game
 
     chaos_bag
-    location_attic
-    location_library
 
 *comment Create investigator stats
 *create i_name ""
@@ -22,8 +20,32 @@
 *create i_sanity 0
 *create i_experience 0
 
+*comment in game mechanics
+*create move_counter 0
+*create dice_roll 0
+
+*comment player state
+*create current_location "nowhere"
+*create current_room_clues 0
+*create available_clues 0
+*create clues_found 0
+
 *comment Skill test stats
 *create test_difficulty 0
+*create token_value 0
 *create test_modified_value 0
+
+*comment *create_array [name], [count], [values - if different]
+*comment So....
+*comment *create room_name_1 attic
+*comment *create room_name_2 library
+*comment *create room_name_count 2
+*comment is now
+*create_array room_name     3 "sitting room" "attic" "library"
+*create_array room_shroud   3   0               2       1
+*create_array room_clues    3   0               1       4
+
+*create room_idx 0
+
 
 *finish
