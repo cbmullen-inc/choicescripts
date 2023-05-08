@@ -1,4 +1,6 @@
+*comment -----------------------------------
 *comment ROOMS
+*comment -----------------------------------
 
 *label sitting_room
 *set room_idx 1

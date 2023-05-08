@@ -4,7 +4,7 @@
 *scene_list
     startup
     choose_investigator
-    locations
+    rooms
     encounter_action
     end_game
 
@@ -35,17 +35,10 @@
 *create token_value 0
 *create test_modified_value 0
 
-*comment *create_array [name], [count], [values - if different]
-*comment So....
-*comment *create room_name_1 attic
-*comment *create room_name_2 library
-*comment *create room_name_count 2
-*comment is now
+*comment Rooms
 *create_array room_name     3 "sitting room" "attic" "library"
 *create_array room_shroud   3   0               2       1
 *create_array room_clues    3   0               1       4
-
 *create room_idx 0
-
 
 *finish
