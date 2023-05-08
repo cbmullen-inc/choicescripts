@@ -9,8 +9,10 @@
 *set draw dice_roll
 
 *comment DEBUG
-You pulled token: ${draw}
+You pulled token: ${draw}.
 
+*comment Variables can't be set as negative numbers (https://github.com/dfabulich/choicescript/issues/111). 
+*comment So we're not using an array to initialize this, even though it would change this verbose conditional into a single line of code...
 *if draw = 1 
     *set token_value + 1
 
@@ -54,11 +56,12 @@ You pulled token: ${draw}
     *set token_value + 0
 
 *if draw = 15 
-    *set token_value + 1000
+    *set token_value + 99
 
 *if draw = 16 
-    *set token_value - 1000
+    *set token_value - 99
 
+Your token had a value of: ${token_value}.
 *set test_modified_value + token_value
 
 *return

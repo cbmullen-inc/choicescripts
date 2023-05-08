@@ -51,18 +51,21 @@ It has ${room_clues[room_idx]} clues.
 *return
 
 *label investigate
-*comment Needs a temp to access the variable value. Could use {} I guess? but it's not as easy to read
-*temp clues room_clues[room_idx]
-*temp shroud room_shroud[room_idx]
+*comment Investigate with intellect
 *set test_modified_value {i_intellect}
+*comment Update modified value with chaos bag draw
+*gosub_scene chaos_bag draw_token
 
-*if test_modified_value >= shroud
-    ${test_modified_value} beats a shroud of ${shroud}. You found a clue!
-    *comment Set pointer to variable
-    *set room_clues[room_idx] clues-1
+
+*comment investigate logic
+*if test_modified_value >= {room_shroud[room_idx]}
+    ${test_modified_value} beats a shroud of ${room_shroud[room_idx]}. You found a clue!
+    *set room_clues[room_idx] {room_clues[room_idx]} -1
     *set clues_found + 1
+    *set test_modified_value 0
     *return
 *else
-    ${test_modified_value} is less than shroud of ${shroud}. You didn't find a clue!
+    ${test_modified_value} is less than shroud of ${room_shroud[room_idx]}. You didn't find a clue!
+    *set test_modified_value 0
     *return
 *return
