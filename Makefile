@@ -1,4 +1,4 @@
-GAME_NAME ?= kingdom_manager
+GAME_NAME ?=
 
 ###
 ##@ Setup

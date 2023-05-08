@@ -8,3 +8,4 @@ Attributes:
     percent i_health health
     percent i_sanity sanity
     percent i_experience experience
+    text room_clues_2

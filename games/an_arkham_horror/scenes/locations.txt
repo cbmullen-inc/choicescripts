@@ -1,0 +1,66 @@
+*comment ROOMS
+
+*label sitting_room
+*set room_idx 1
+*gosub room_summary
+*choice
+    # Move to the attic
+        *goto attic
+    # Move to the library
+        *goto library
+*finish
+
+*label attic
+*set room_idx 2
+*gosub room_summary
+*choice
+    *if {room_clues[room_idx]} > 0
+        *allow_reuse # Investigate the ${room_name[room_idx]}
+            *gosub investigate
+            *goto attic
+    # Move to the sitting room
+        *goto sitting_room
+    # Move to the library
+        *goto library
+*finish
+
+*label library
+*set room_idx 3
+*gosub room_summary
+*choice
+    *if {room_clues[room_idx]} > 0
+        *allow_reuse # Investigate the ${room_name[room_idx]}
+            *gosub investigate
+            *goto library
+    # Move to the attic
+        *goto attic
+    # Move to the sitting room
+        *goto sitting_room
+*finish
+
+*comment -----------------------------------
+*comment SUBROUTINES
+*comment -----------------------------------
+
+*label room_summary
+You are in the ${room_name[room_idx]}.
+It has a shroud of ${room_shroud[room_idx]}.
+It has ${room_clues[room_idx]} clues.
+*return
+
+*label investigate
+*comment Needs a temp to access the variable value. Could use {} I guess? but it's not as easy to read
+*temp clues room_clues[room_idx]
+*temp shroud room_shroud[room_idx]
+*set test_modified_value {i_intellect}
+
+*if test_modified_value >= shroud
+    ${test_modified_value} beats a shroud of ${shroud}. You found a clue!
+    *comment Set pointer to variable
+    *set room_clues[room_idx] clues-1
+    *set clues_found + 1
+    *return
+*else
+    ${test_modified_value} is less than shroud of ${shroud}. You didn't find a clue!
+    *return
+*return

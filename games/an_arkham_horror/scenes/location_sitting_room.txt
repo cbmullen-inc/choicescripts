@@ -1,9 +1,0 @@
-You find yourself back in the sitting room.
-*line_break
-You sit and ponder your options.
-
-*choice
-    # Go to the library
-        *goto_scene location_library
-    # Go to the attic
-        *goto_scene location_attic
