@@ -36,6 +36,6 @@
 *create_array room_name     3 "sitting room" "attic" "library"
 *create_array room_shroud   3   0               2       1
 *create_array room_clues    3   0               1       4
-*create room_idx 0
+*create room_idx 1
 
 *finish
