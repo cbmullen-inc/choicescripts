@@ -4,68 +4,66 @@
 
 *label sitting_room
 *set room_idx 1
+*gosub_scene actions move
 *gosub room_summary
 *choice
     # Move to the attic
+        *set room_move_in_progress true
         *goto attic
+
     # Move to the library
+        *set room_move_in_progress true
         *goto library
-*finish
 
 *label attic
 *set room_idx 2
+*gosub_scene actions move
 *gosub room_summary
 *choice
     *if {room_clues[room_idx]} > 0
-        *allow_reuse # Investigate the ${room_name[room_idx]}
-            *gosub investigate
+        *allow_reuse # Investigate the ${room_name[room_idx]} (Intellect: ${i_intellect})
+            *gosub_scene actions investigate
             *goto attic
     # Move to the sitting room
+        *set room_move_in_progress true
         *goto sitting_room
+
     # Move to the library
+        *set room_move_in_progress true
         *goto library
-*finish
 
 *label library
 *set room_idx 3
+*gosub_scene actions move
 *gosub room_summary
 *choice
     *if {room_clues[room_idx]} > 0
-        *allow_reuse # Investigate the ${room_name[room_idx]}
-            *gosub investigate
+        *allow_reuse # Investigate the ${room_name[room_idx]} (Intellect: ${i_intellect})
+            *gosub_scene actions investigate
             *goto library
     # Move to the attic
+        *set room_move_in_progress true
         *goto attic
     # Move to the sitting room
+        *set room_move_in_progress true
         *goto sitting_room
-*finish
+
+*comment TODO - More Rooms and limited connections. Maybe a map
 
 *comment -----------------------------------
 *comment SUBROUTINES
 *comment -----------------------------------
 
 *label room_summary
+Actions Remaining: [b]${player_actions_remaining}[/b]
+*line_break
+*line_break
 You are in the ${room_name[room_idx]}.
-It has a shroud of ${room_shroud[room_idx]}.
-It has ${room_clues[room_idx]} clues.
+*line_break
+~~~ Shroud: ${room_shroud[room_idx]}. ~~~
+*line_break
+[?] Available Clues: [b]${room_clues[room_idx]}[/b] [?]
+*line_break
+*line_break
 *return
 
-*label investigate
-*comment Investigate with intellect
-*set test_modified_value {i_intellect}
-*comment Update modified value with chaos bag draw
-*gosub_scene chaos_bag draw_token
-
-
-*comment investigate logic
-*if test_modified_value >= {room_shroud[room_idx]}
-    ${test_modified_value} beats a shroud of ${room_shroud[room_idx]}. You found a clue!
-    *set room_clues[room_idx] {room_clues[room_idx]} -1
-    *set clues_found + 1
-    *set test_modified_value 0
-    *return
-*else
-    ${test_modified_value} is less than shroud of ${room_shroud[room_idx]}. You didn't find a clue!
-    *set test_modified_value 0
-    *return
-*return

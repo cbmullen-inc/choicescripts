@@ -8,5 +8,5 @@ Attributes:
     text i_health health
     text i_sanity sanity
     text i_experience experience
-    text clues_found Clues Found
+    text player_clues_found Clues Found
     text room_name[room_idx] Current Location

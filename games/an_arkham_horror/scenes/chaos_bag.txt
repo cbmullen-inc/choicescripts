@@ -8,9 +8,6 @@
 *temp draw
 *set draw dice_roll
 
-*comment DEBUG
-You pulled token: ${draw}.
-
 *comment Variables can't be set as negative numbers (https://github.com/dfabulich/choicescript/issues/111). 
 *comment So we're not using an array to initialize this, even though it would change this verbose conditional into a single line of code...
 *if draw = 1 
@@ -61,7 +58,21 @@ You pulled token: ${draw}.
 *if draw = 16 
     *set token_value - 99
 
-Your token had a value of: ${token_value}.
 *set test_modified_value + token_value
+*gosub chaos_bag_summary
+*return
 
+*label chaos_bag_summary
+[b]Chaos Bag[/b]
+*line_break
+-----------------
+*line_break
+Your intellect was: ${i_intellect}
+*line_break
+You pulled a token with a value of ${token_value}
+*line_break
+Your test score is: ${i_intellect+token_value}
+*line_break
+-----------------
+*line_break
 *return
