@@ -29,4 +29,3 @@
         *set i_combat + 1
         *set i_agility + 4
         *finish
-*finish
