@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Choicescript game library</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      #header h1 {
+        margin: 0;
+      }
+      #main {
+        display: flex;
+      }
+      #sidebar {
+        background-color: #eee;
+        padding: 10px;
+        width: 200px;
+      }
+      #content {
+        flex: 1;
+        padding: 10px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin: 5px 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Choicescript Game Library</h1>
+    </div>
+    <div id="main">
+      <div id="sidebar">
+        <h2>Games</h2>
+        <ul>
+          <li><a href="./games/kingdom_manager/index.html">Kingdom Manager</a></li>
+          <li><a href="./games/an_arkham_horror/index.html">An Arkham Horror</a></li>
+          <li><a href="./jenny/little_red_riding_hood/index.html">Little Red Riding Hood</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <h2>Recent Games</h2>
+        <a href="./games/kingdom_manager/index.html"><img src="./games/kingdom_manager/images/crown.png" alt="Kingdom Management"></a>
+        <a href="./games/an_arkham_horror/index.html"><img src="./games/an_arkham_horror/images/arkham.png" alt="An Arkham Horror"></a>
+        <a href="./jenny/little_red_riding_hood/index.html"><img src="./jenny/little_red_riding_hood/lrrh.jpg" alt="Little Red Riding Hood"></a>
+        <a href="http://www.linkedin.com"><img src="https://via.placeholder.com/500x300" alt="LinkedIn Game Image"></a>
+      </div>
+    </div>
+  </body>
+</html>
