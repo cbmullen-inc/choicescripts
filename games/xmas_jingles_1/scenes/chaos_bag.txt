@@ -1,0 +1,78 @@
+*label draw_token
+
+*comment reset chaos values
+*set token_value 0
+
+*comment get token from bag
+*rand dice_roll 1 16
+*temp draw
+*set draw dice_roll
+
+*comment Variables can't be set as negative numbers (https://github.com/dfabulich/choicescript/issues/111). 
+*comment So we're not using an array to initialize this, even though it would change this verbose conditional into a single line of code...
+*if draw = 1 
+    *set token_value + 1
+
+*if draw = 2 
+    *set token_value + 0
+
+*if draw = 3 
+    *set token_value + 0
+
+*if draw = 4 
+    *set token_value - 1
+
+*if draw = 5 
+    *set token_value - 1
+
+*if draw = 6 
+    *set token_value - 1
+
+*if draw = 7 
+    *set token_value - 2
+
+*if draw = 8 
+    *set token_value - 2
+
+*if draw = 9 
+    *set token_value - 3
+    
+*if draw = 10 
+    *set token_value - 4
+
+*if draw = 11 
+    *set token_value + 0
+
+*if draw = 12 
+    *set token_value + 0
+
+*if draw = 13 
+    *set token_value + 0
+
+*if draw = 14 
+    *set token_value + 0
+
+*if draw = 15 
+    *set token_value + 99
+
+*if draw = 16 
+    *set token_value - 99
+
+*set test_modified_value + token_value
+*gosub chaos_bag_summary
+*return
+
+*label chaos_bag_summary
+[b]Chaos Bag[/b]
+*line_break
+-----------------
+*line_break
+Your intellect was: ${i_intellect}
+*line_break
+You pulled a token with a value of ${token_value}
+*line_break
+Your test score is: ${i_intellect+token_value}
+*line_break
+-----------------
+*line_break
+*return
