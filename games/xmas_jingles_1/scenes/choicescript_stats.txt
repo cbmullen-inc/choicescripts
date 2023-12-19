@@ -1,12 +1,3 @@
 Attributes:
 *stat_chart
-    text i_name Name
-    text i_willpower willpower
-    text i_intellect intellect
-    text i_combat combat
-    text i_agility agility
-    text i_health health
-    text i_sanity sanity
-    text i_experience experience
-    text player_clues_found Clues Found
-    text room_name[room_idx] Current Location
+    text christmas_spirit Christmas Spirit
