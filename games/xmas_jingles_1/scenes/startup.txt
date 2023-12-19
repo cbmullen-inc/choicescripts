@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *title Jenny, Sophie and Jingles
 *author Jingles
 
@@ -14,67 +13,4 @@
 
 *comment player state
 *create christmas_spirit 0
-=======
-*title An Arkham Horror
-*author Chris
-
-*scene_list
-    startup
-    choose_investigator
-    rooms
-    end_game
-
-    chaos_bag
-    actions
-    turn_phases
-
-*comment Create investigator stats
-*create i_name ""
-*create i_willpower 0
-*create i_intellect 0
-*create i_combat 0
-*create i_agility 0
-*create i_health 0
-*create i_sanity 0
-*create i_experience 0
-
-*comment in game mechanics
-*create move_counter 0
-*create dice_roll 0
-
-*comment game state
-*create act_current_clues 0
-*create act_required_clues 0
-*create agenda_current_doom 0
-*create agenda_required_doom 0
-
-*comment player state
-*create player_clues_found 0
-*create player_actions_remaining 4
-
-*comment Skill test stats
-*create test_difficulty 0
-*create token_value 0
-*create test_modified_value 0
-
-*comment Rooms
-*create_array room_name     3 "sitting room" "attic" "library"
-*create_array room_shroud   3   0               2       1
-*create_array room_clues    3   0               1       4
-*create room_idx 1
-*create room_move_in_progress false
-
-*comment Enemy
-*create_array enemy_name    2   "rats"  "ghoul"
-*create_array enemy_health  2   1       2
-*create_array enemy_combat  2   1       2
-*create_array enemy_agility 2   2       1
-*create_array enemy_dmg_p   2   1       1
-*create_array enemy_dmg_m   2   0       1
-*create enemy_idx 1
-
-*comment Treachery
-*create treachery_idx 1
-
->>>>>>> 00057485d988de22c3b4771a11d8604f28d3a896
 *finish

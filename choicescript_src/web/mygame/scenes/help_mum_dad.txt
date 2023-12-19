@@ -1,8 +1,0 @@
-Decorate the tree
-*comment TODO - Block this elsewhere
-*if christmas_spirit > 0
-    Nice work
-    *goto_scene good_ending
-*else
-    Oh dear
-    *goto_scene naughty_ending
