@@ -1,0 +1,20 @@
+*label mythos
+The mythos phase triggers. Doom is checked.
+*line_break
+*set player_actions_remaining 4
+*comment TODO
+*return
+
+*label enemy
+All the enemies are striking now.
+*line_break
+*comment TODO
+*gosub upkeep
+*return
+
+*label upkeep
+You got through the upkeep process
+*line_break
+*comment TODO
+*gosub mythos
+*return
