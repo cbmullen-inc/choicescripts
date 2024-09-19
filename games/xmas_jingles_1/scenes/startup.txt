@@ -1,0 +1,16 @@
+*title Jenny, Sophie and Jingles
+*author Jingles
+
+*scene_list
+    startup
+    help_mum_dad
+    good_ending
+    naughty_ending
+
+*comment *comment in game mechanics
+*comment *create move_counter 0
+*comment *create dice_roll 0
+
+*comment player state
+*create christmas_spirit 0
+*finish
